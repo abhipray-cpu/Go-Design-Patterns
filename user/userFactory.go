@@ -18,9 +18,9 @@ const (
 func GetUser(userType UserType) (IUser, error) {
 	switch userType {
 	case customer:
-		return NewCustomerFactory(),nil
+		return NewCustomerFactory(), nil
 	case vendor:
-		return NewVendorFactory(),nil
+		return NewVendorFactory(), nil
 	case admin:
 		return NewAdminFactory(), nil
 	default:

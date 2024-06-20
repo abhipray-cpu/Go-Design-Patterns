@@ -98,7 +98,6 @@ type ElectronicBuilder interface {
 	GetElectronic() Electronic
 }
 
-
 // getBuilder returns an instance of ElectronicBuilder based on the provided builderType.
 // If builderType is "mobile", it returns a new instance of MobileBuilder.
 // If builderType is "pc", it returns a new instance of PCBuilder.

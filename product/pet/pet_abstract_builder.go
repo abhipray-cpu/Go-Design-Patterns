@@ -3,7 +3,7 @@ package pet
 // PetBuilder is an interface for building pet objects.
 type PetBuilder interface {
 	// sets the common attributes of all kinds of pet objects
-	SetAttributes(id,name string,price float64,description,vendor string)
+	SetAttributes(id, name string, price float64, description, vendor string)
 	// sets the category of the pet object
 	SetCategory(category string)
 	// sets the brand of the pet object

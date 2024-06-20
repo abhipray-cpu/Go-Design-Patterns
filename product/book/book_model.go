@@ -7,7 +7,7 @@ type Book struct {
 	Brand       string  // Brand is the brand or publisher of the book.
 	Price       float64 // Price is the price of the book.
 	Description string  // Description is the brief description of the book.
-	Vendor	  	string  // Vendor is the vendor of the book.
+	Vendor      string  // Vendor is the vendor of the book.
 	// category specific attributes
 	Author      string // Author is the name of the book's author.
 	Publisher   string // Publisher is the name of the book's publisher.

@@ -35,7 +35,7 @@ func (b *ArtCraftBuilder) SetDimensions(dimensions string) {
 	b.book.Dimensions = dimensions
 }
 
-// SetMaterial sets the material of the book.   
+// SetMaterial sets the material of the book.
 func (b *ArtCraftBuilder) SetMaterial(material string) {
 	b.book.Material = material
 }
@@ -54,7 +54,6 @@ func (b *ArtCraftBuilder) SetIntendedUse(intendedUse string) {
 func (b *ArtCraftBuilder) SetType(bookType string) {
 	b.book.Type = bookType
 }
-
 
 // SetSize sets the size of the book.
 func (b *ArtCraftBuilder) SetSize(size string) {

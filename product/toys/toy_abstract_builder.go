@@ -3,11 +3,11 @@ package toys
 // ToyBuilder is an interface that defines the methods for building a toy.
 type ToyBuilder interface {
 	// this method allows for setting the attributes of the toy
-	SetAttributes(id,name string, price float64,description string)
+	SetAttributes(id, name string, price float64, description string)
 	// this method allows for setting the category of the toy
 	SetCategory(category string)
 	// this method allows for setting the age range of the toy
-	SetAgeRange(minAge,maxAge int)
+	SetAgeRange(minAge, maxAge int)
 	// this method allows for setting the brand of the toy
 	SetBrand(brand string)
 	// this method allows for setting the weight of the toy
@@ -23,8 +23,8 @@ type ToyBuilder interface {
 	// this methods allows for setting dimension of the product
 	SetDimensions(dimension string)
 	// setting the age group suitable for the toy
-	SetSuitableFor( suitableFor []string)
-		// this method allows for setting the vendor of the toy
+	SetSuitableFor(suitableFor []string)
+	// this method allows for setting the vendor of the toy
 	SetVendor(vendor string)
 	// this method allows for getting the toy
 	GetToy() Toy

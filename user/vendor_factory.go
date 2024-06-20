@@ -2,9 +2,10 @@ package user
 
 import "time"
 
-type VendorFactory struct{
+type VendorFactory struct {
 	IUser
 }
+
 // Vendor represents a vendor in the e-commerce system.
 type Vendor struct {
 	User     User   // The user associated with the vendor.
@@ -18,7 +19,7 @@ func NewVendorFactory() *VendorFactory {
 }
 
 // CreateUser creates a new Vendor user with the given information and returns a pointer to the Vendor object.
-func (vf *VendorFactory) CreateUser(id, name, email, contact, profilePicture, brand string,business string, password string, dob time.Time) *Vendor {
+func (vf *VendorFactory) CreateUser(id, name, email, contact, profilePicture, brand string, business string, password string, dob time.Time) *Vendor {
 	return &Vendor{
 		User: User{
 			ID:             id,
@@ -32,7 +33,7 @@ func (vf *VendorFactory) CreateUser(id, name, email, contact, profilePicture, br
 			LastLogin:      time.Now(),
 			DOB:            dob,
 		},
-		Brand: brand,
+		Brand:    brand,
 		Business: business,
 	}
 }

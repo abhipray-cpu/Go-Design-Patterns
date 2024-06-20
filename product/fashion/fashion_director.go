@@ -50,7 +50,7 @@ func (d *Director) buildShoes(id, name string, price float64, description, vendo
 
 // buildJewelry builds a jewelry product using the provided attributes and returns a FashionBuilder.
 // The function sets the attributes such as id, name, price, description, and vendor using the provided values.
-// It also sets the brand, category, material size, color 
+// It also sets the brand, category, material size, color
 func (d *Director) buildJewelry(id, name string, price float64, description, vendor string, brand, category string, material string, size string, color string, gender, style, prodType string, gemStone string) FashionBuilder {
 	d.builder.SetAttributes(id, name, price, description, vendor)
 	d.builder.SetBrand(brand)
@@ -82,7 +82,7 @@ func (d *Director) buildBag(id, name string, price float64, description, vendor 
 
 // buildWatch builds a fashion product of type watch using the provided attributes and returns a FashionBuilder.
 // The function sets the attributes such as id, name, price, description, and vendor using the provided values.
-// It also sets the brand, category, material size, color 
+// It also sets the brand, category, material size, color
 func (d *Director) buildWatch(id, name string, price float64, description, vendor string, brand, category string, material string, size string, color string, gender, style, prodType string, resistance string) FashionBuilder {
 	d.builder.SetAttributes(id, name, price, description, vendor)
 	d.builder.SetBrand(brand)

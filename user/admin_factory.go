@@ -2,9 +2,10 @@ package user
 
 import "time"
 
-type AdminFactory struct{
+type AdminFactory struct {
 	IUser
 }
+
 // Admin represents an administrative user with specific permissions.
 type Admin struct {
 	User        User     // The underlying user information for the admin.

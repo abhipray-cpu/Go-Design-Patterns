@@ -2,12 +2,13 @@ package user
 
 import "time"
 
-type CustomerFactory struct{
+type CustomerFactory struct {
 	IUser
 }
+
 // Customer represents a user who is also a customer.
 type Customer struct {
-	User         // Embedded User struct
+	User                // Embedded User struct
 	CustomerType string // The type of customer (e.g., regular, premium)
 }
 

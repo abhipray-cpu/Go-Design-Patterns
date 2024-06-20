@@ -17,28 +17,28 @@ type SportsBuilder interface {
 
 	// set brand of the sports product
 	SetBrand(brand string)
-	
+
 	// SetMaterial sets the material of the sports product.
 	SetMaterial(material string)
 
 	// SetDimensions sets the dimensions of the sports product.
 	SetDimensions(dimensions string)
 
-    // SetType sets the type of the sports product.
+	// SetType sets the type of the sports product.
 	SetType(prodType string)
 
 	// SetDurability sets the durability of the sports product.
 	SetDurability(durability string)
-    
+
 	// SetSuitableFor sets the suitable for of the sports product.
 	SetSuitableFor(suitableFor []string)
 
 	// SetSize sets the size of the sports product.
-    SetSize(size string)
+	SetSize(size string)
 
 	// SetVendor sets the vendor of the sports product.
 	SetVendor(vendor string)
-	
+
 	// SetColor of the sports product
 	SetColor(color string)
 

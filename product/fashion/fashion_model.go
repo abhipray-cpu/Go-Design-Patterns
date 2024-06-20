@@ -3,7 +3,7 @@ package fashion
 // Fashion represents a fashion product.
 type Fashion struct {
 	Id          string  // Unique identifier of the fashion product.
-	Vendor 		string  // Vendor of the fashion product.
+	Vendor      string  // Vendor of the fashion product.
 	Name        string  // Name of the fashion product.
 	Price       float64 // Price of the fashion product.
 	Description string  // Description of the fashion product.
@@ -11,7 +11,7 @@ type Fashion struct {
 	Material    string  // Material used in the fashion product.
 
 	// Category-specific attributes
-	Category		string // Category of the fashion product.
+	Category        string // Category of the fashion product.
 	Size            string // Size of the clothing, footwear, or bags.
 	Color           string // Color of the clothing, footwear, bags, or watches.
 	Gender          string // Gender for which the fashion product is suitable.

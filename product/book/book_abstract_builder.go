@@ -44,28 +44,27 @@ type BookBuilder interface {
 
 	// SetMaterial sets the material of the book.
 	// It takes the material as a parameter.
-	SetMaterial(material string) 
+	SetMaterial(material string)
 
 	// SetColor sets the color of the book.
 	// It takes the color as a parameter.
-	SetColor(color string) 
+	SetColor(color string)
 
 	// SetIntendedUse sets the intended use of the book.
 	// It takes the intended use as a parameter.
-	SetIntendedUse(intendedUse string) 
+	SetIntendedUse(intendedUse string)
 
 	// SetSize sets the size of the book.
 	// It takes the size as a parameter.
-	SetSize(size string) 
+	SetSize(size string)
 
 	// SetUnits sets the units of measurement for the book.
 	// It takes the units as a parameter.
-	SetUnits(units string) 
+	SetUnits(units string)
 
 	// GetBook returns the built Book object.
 	GetItem() Book
 }
-
 
 // getBookBuilder returns a BookBuilder based on the provided builderType.
 // It creates and returns a specific type of builder based on the input string.

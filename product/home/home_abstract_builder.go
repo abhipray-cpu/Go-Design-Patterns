@@ -3,7 +3,7 @@ package home
 // HomeBuilder is an interface that defines the methods for building a home product.
 type HomeBuilder interface {
 	// SetAttributes sets the attributes of the home product which are common to all categories.
-	SetAttributes(id,name string,price float64,description,vendor string)
+	SetAttributes(id, name string, price float64, description, vendor string)
 	// SetCategory sets the category of the home product.
 	SetCategory(category string)
 	// SetBrand sets the brand of the home product.
@@ -44,20 +44,20 @@ type HomeBuilder interface {
 // If the builderType is "furniture", it returns a newFurnitureBuilder.
 // If the builderType is "decor", it returns a newDecorBuilder.
 // If the builderType is not recognized, it returns nil.
-func getBuilder(builderType string) HomeBuilder{
-	if builderType == "bath"{
+func getBuilder(builderType string) HomeBuilder {
+	if builderType == "bath" {
 		return newBathBuilder()
 	}
-	if builderType == "tools"{
+	if builderType == "tools" {
 		return newToolBuilder()
 	}
-	if builderType == "kitchen"{
+	if builderType == "kitchen" {
 		return newKitchenBuilder()
 	}
-	if builderType == "furniture"{
+	if builderType == "furniture" {
 		return newFurnitureBuilder()
 	}
-	if builderType == "decor"{
+	if builderType == "decor" {
 		return newDecorBuilder()
 	}
 	return nil

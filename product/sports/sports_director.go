@@ -23,10 +23,10 @@ func (d *Director) setBuilder(b SportsBuilder) {
 // material, weight, and vendor of the product.
 // It returns the configured builder.
 // buildSportsProduct builds a sports product using the provided attributes and returns a SportsBuilder.
-func (d *Director) buildSportsProduct(id,name string,price float64,description string,category string,minAge,maxAge int,dimension string,durability string,material string,weight string,vendor string,prodType,size,brand,color string,suitable []string) SportsBuilder {
-	d.builder.SetAttributes(id,name,price,description)
+func (d *Director) buildSportsProduct(id, name string, price float64, description string, category string, minAge, maxAge int, dimension string, durability string, material string, weight string, vendor string, prodType, size, brand, color string, suitable []string) SportsBuilder {
+	d.builder.SetAttributes(id, name, price, description)
 	d.builder.SetCategory(category)
-	d.builder.SetAgeGroup(minAge,maxAge)
+	d.builder.SetAgeGroup(minAge, maxAge)
 	d.builder.SetDimensions(dimension)
 	d.builder.SetDurability(durability)
 	d.builder.SetMaterial(material)

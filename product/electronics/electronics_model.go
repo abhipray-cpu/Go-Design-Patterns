@@ -3,15 +3,15 @@ package electronics
 // Electronic represents an electronic product.
 // Electronic represents an electronic product.
 type Electronic struct {
-	ID          string   // Unique identifier for the electronic product.
-	Vendor 		string   // Vendor of the electronic product.
-	Name        string   // Name of the electronic product.
-	Brand       string   // Brand of the electronic product.
-	Price       float64  // Price of the electronic product.
-	Description string   // Description of the electronic product.
+	ID          string  // Unique identifier for the electronic product.
+	Vendor      string  // Vendor of the electronic product.
+	Name        string  // Name of the electronic product.
+	Brand       string  // Brand of the electronic product.
+	Price       float64 // Price of the electronic product.
+	Description string  // Description of the electronic product.
 
 	// Category specific attributes
-	Category		string   // Category of the electronic product.
+	Category        string   // Category of the electronic product.
 	ScreenSize      string   // Screen size of the electronic product.
 	BatteryLife     string   // Battery life of the electronic product.
 	OS              string   // Operating system of the electronic product.

@@ -3,7 +3,7 @@ package home
 // Home represents a product that belongs to the "Home" category.
 type Home struct {
 	ID          string  // Unique identifier for the home product.
-	Vendor 		string  // Vendor of the home product.
+	Vendor      string  // Vendor of the home product.
 	Name        string  // Name of the home product.
 	Description string  // Description of the home product.
 	Category    string  // Category of the home product.
