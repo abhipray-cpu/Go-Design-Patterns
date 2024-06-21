@@ -15,7 +15,7 @@ func NewRegularCustomerConcreteBuilder() *RegularCustomerConcreteBuilder {
 }
 
 // IntializeCart initializes the cart with default values.
-func (c *RegularCustomerConcreteBuilder) IntializeCart(){
+func (c *RegularCustomerConcreteBuilder) IntializeCart() {
 	c.cart.Items = make(map[string]Item)
 }
 

@@ -4,7 +4,7 @@ package cart
 type CartBuilder interface {
 	// IntializeCart initializes the cart with default values.
 	IntializeCart()
-	
+
 	// AddItem adds an item to the cart with the specified quantity.
 	AddItem(id, name, description string, price float64, quantity int)
 
