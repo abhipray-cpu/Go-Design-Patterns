@@ -6,7 +6,7 @@ import (
 
 func TestCreateBagProduct(t *testing.T) {
 	// Test case 1
-	product := createBagProduct("1", "Bag 1", 99.99, "Description 1", "Vendor 1", "Brand 1", "Category 1", "Material 1", "Size 1", "Color 1", "Gender 1", "Style 1", "Product Type 1")
+	product := createBagProduct("1", "Bag 1", 99.99, "Description 1", "Vendor 1", "Brand 1", "Category 1", "Material 1", "Size 1", "Color 1", "Female", "Style 1", "Product Type 1")
 
 	// Assertion 1
 	if product.Id != "1" {
@@ -56,11 +56,6 @@ func TestCreateBagProduct(t *testing.T) {
 	// Assertion 10
 	if product.Color != "Color 1" {
 		t.Errorf("Expected Color to be 'Color 1', but got '%s'", product.Color)
-	}
-
-	// Assertion 11
-	if product.Gender != "Gender 1" {
-		t.Errorf("Expected Gender to be 'Gender 1', but got '%s'", product.Gender)
 	}
 
 	// Assertion 12

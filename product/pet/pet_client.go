@@ -14,7 +14,7 @@ func createAccessory(id, name string, price float64, description, vendor string,
 // It takes in various parameters such as id, name, price, description, vendor, category, brand, ingredients, nutritionalValue, weight, size, prodType, and suitable.
 // It uses the builder pattern to construct the food product and returns the built product.
 func createFood(id, name string, price float64, description, vendor string, category string, brand string, ingredients []string, nutritionalValue string, weight, size, prodType string, suitable []string) Pet {
-	builder := getBuilder("fod")
+	builder := getBuilder("food")
 	director := newDirector(builder)
 	build := director.buildFoodProduct(id, name, price, description, vendor, category, brand, ingredients, nutritionalValue, weight, size, prodType, suitable)
 	return build.GetItem()
