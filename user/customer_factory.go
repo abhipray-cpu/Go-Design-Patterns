@@ -9,7 +9,7 @@ type CustomerFactory struct {
 // Customer represents a user who is also a customer.
 type Customer struct {
 	User                // Embedded User struct
-	CustomerType string // The type of customer (e.g., regular, premium)
+	CustomerType string // The type of customer (e.g.,not registered, regular, premium)
 }
 
 // NewCustomerFactory creates a new instance of CustomerFactory.

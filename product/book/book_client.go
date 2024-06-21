@@ -16,8 +16,10 @@ package book
 //   - weight: The weight of the book.
 //   - dimension: The dimensions of the book.
 //   - genre: The genre of the book.
+//
 // Returns:
-//   The created Book object.
+//
+//	The created Book object.
 func createBookProduct(id, name string, price float64, description, vendor string, author string, publisher string, isbn string, pages string, language string, weight, dimension, genre string) Book {
 	builder := getBookBuilder("book")
 	director := NewDirector(builder)
